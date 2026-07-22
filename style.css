@@ -1,203 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Patricia, a content and growth marketer specializing in content management, email marketing, SEO, GTM outreach, digital PR, and influencer marketing."
-    />
-    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
-    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
-    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
-    <meta name="referrer" content="no-referrer" />
-    <meta name="color-scheme" content="light only" />
-    <title>Patricia | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">Patricia</a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#services">Expertise</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+:root {
+  --bg: #f6efe8;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #fffdf9;
+  --text: #1f2430;
+  --muted: #5f6472;
+  --accent: #a4603f;
+  --accent-strong: #7e4128;
+  --line: rgba(31, 36, 48, 0.1);
+  --shadow: 0 20px 45px rgba(67, 45, 32, 0.12);
+}
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Content Strategy • Growth Marketing • Brand Storytelling</p>
-            <h1>Sharp thinking, warm tone, and marketing that actually moves.</h1>
-            <p class="lead">
-              With 12 years in digital and content marketing, I help brands build trust, grow visibility,
-              and turn thoughtful storytelling into momentum.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#work">See sample work</a>
-              <button class="button secondary" id="emailReveal" type="button">Get in touch</button>
-            </div>
-            <div class="hero-details">
-              <div class="detail-block">
-                <h3>Languages</h3>
-                <p>English, Tagalog, and basic German</p>
-              </div>
-              <div class="detail-block">
-                <h3>Most-used tools</h3>
-                <p>HubSpot, Canva, WordPress, SEMrush, Ahrefs, Google Search Console, Hunter, Google Sheets</p>
-              </div>
-              <div class="detail-block">
-                <h3>Previous client locations</h3>
-                <p>USA, Canada, Australia, Singapore, UAE, Bulgaria</p>
-              </div>
-              <div class="detail-block">
-                <h3>Types of copies produced</h3>
-                <p>Web page content, blog articles, email marketing copies, newsletters, whitepapers, paid ad copies, social posts, brochures, YouTube scripts, TV ad scripts, radio ad scripts, sales enablement materials, and more.</p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <img src=".tmp/patricia.jpg" alt="Patricia" />
-            <div class="hero-card" aria-label="Professional summary">
-              <p class="card-label">What I bring</p>
-              <ul>
-                <li>Data-driven campaigns</li>
-                <li>Brand storytelling, tailored to the target audience</li>
-                <li>Continuous product and platform improvements through audits, testing, feedback, research, and thoughtful analysis</li>
-                <li>Digital PR (Outreach to industry experts, journalists, and digital magazines)</li>
-                <li>Influencer marketing</li>
-                <li>On page SEO and back linking</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+* {
+  box-sizing: border-box;
+}
 
-        <section class="section" id="about">
-          <div class="about-grid">
-            <div class="about-card">
-              <h2>Collaborative by instinct. Reliable by design.</h2>
-              <p>
-                I’m comfortable shaping strategy with founders and executives, and I’ve worked closely with
-                them alongside sales, product, tech, and other internal teams. I also speak with customers
-                for case studies, testimonials, A/B tests, and feedback sessions that keep the work grounded.
-              </p>
-            </div>
-            <div class="about-card secondary visual-card">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Collaborative team working together" />
-            </div>
-          </div>
-        </section>
+html {
+  scroll-behavior: smooth;
+}
 
-        <section class="section" id="services">
-          <div class="section-heading">
-            <p class="eyebrow">Expertise</p>
-            <h2>Capabilities that support brands at every stage.</h2>
-          </div>
-          <div class="card-grid">
-            <article class="info-card">
-              <h3>Content Management</h3>
-              <p>Planning, organizing, and shaping content systems that stay clear, consistent, and scalable.</p>
-            </article>
-            <article class="info-card">
-              <h3>Email Marketing</h3>
-              <p>Crafting thoughtful email content and campaigns that nurture attention and drive action.</p>
-            </article>
-            <article class="info-card">
-              <h3>SEO & Search Visibility</h3>
-              <p>Creating content that is discoverable, valuable, and aligned with audience intent.</p>
-            </article>
-            <article class="info-card">
-              <h3>Outreach & GTM</h3>
-              <p>Building meaningful partnerships and campaigns that open new doors for growth.</p>
-            </article>
-            <article class="info-card">
-              <h3>Digital PR</h3>
-              <p>Supporting visibility through strategic narratives, media collaboration, and trusted brand voice.</p>
-            </article>
-            <article class="info-card">
-              <h3>Influencer Marketing</h3>
-              <p>Bringing brand stories to life through authentic, high-fit creator partnerships.</p>
-            </article>
-          </div>
-        </section>
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(164, 96, 63, 0.14), transparent 30%),
+    var(--bg);
+  line-height: 1.6;
+}
 
-        <section class="section" id="work">
-          <div class="section-heading">
-            <p class="eyebrow">Selected work</p>
-            <h2>Samples that reflect range, depth, and versatility.</h2>
-          </div>
+img {
+  max-width: 100%;
+}
 
-          <div class="work-group">
-            <h3>Written Content</h3>
-            <div class="work-links">
-              <a href="https://blog.sendle.com/en-us/author/pat-hisugan" target="_blank" rel="noreferrer">Sendle – shipping & logistics articles</a>
-              <a href="https://blog.sendle.com/en-ca/author/pat-hisugan" target="_blank" rel="noreferrer">Sendle – Canadian blog content</a>
-              <a href="https://truxel.ai/" target="_blank" rel="noreferrer">Truxel.ai – SaaS / AI website and content</a>
-              <a href="https://www.velto.com/blog/what-is-a-mainnet-crypto-wallet-and-how-does-it-work" target="_blank" rel="noreferrer">Velto – Web3 / DeFi article</a>
-              <a href="https://www.velto.com/" target="_blank" rel="noreferrer">Velto – website content</a>
-            </div>
-          </div>
+.page-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+}
 
-          <div class="work-group">
-            <h3>Email Marketing</h3>
-            <div class="work-links">
-              <a href="https://drive.google.com/drive/folders/187kn4Vfb64keeMpUg5geBmJLM_Cc7CV4" target="_blank" rel="noreferrer">Sendle email content samples</a>
-            </div>
-          </div>
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 28px;
+}
 
-          <div class="work-group">
-            <h3>Social Media Collaborations</h3>
-            <div class="work-links">
-              <a href="https://www.instagram.com/p/DbEJXUhgPyO/" target="_blank" rel="noreferrer">MachineTranslation.com – Instagram collaboration</a>
-              <a href="https://www.tiktok.com/@oida_austria/photo/7665059364616539413" target="_blank" rel="noreferrer">MachineTranslation.com – TikTok collaboration</a>
-            </div>
-          </div>
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
 
-          <div class="work-group">
-            <h3>Sales & Partnership Materials</h3>
-            <div class="work-links">
-              <a href="https://try.sendle.com/hubfs/content/files/PDF/us/kyle/sendle-plus-4g-max-one-pager.pdf" target="_blank" rel="noreferrer">Sendle one-pager</a>
-              <a href="https://drive.google.com/drive/folders/187kn4Vfb64keeMpUg5geBmJLM_Cc7CV4" target="_blank" rel="noreferrer">Additional partnership and campaign materials</a>
-            </div>
-          </div>
-        </section>
+.site-nav {
+  display: flex;
+  gap: 20px;
+}
 
-        <section class="section contact-section" id="contact">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s build something memorable together.</h2>
-          </div>
-          <div class="contact-card">
-            <div class="contact-copy">
-              <p>
-                I’m open to freelance projects, contract work, and opportunities where thoughtful content and
-                strategic growth can make a real impact.
-              </p>
-              <a class="button primary" href="mailto:patzhisugan@gmail.com">Email Patricia</a>
-            </div>
-            <img
-              class="contact-image"
-              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80"
-              alt="Professional working at a desk with a laptop and notes"
-            />
-          </div>
-        </section>
-      </main>
-    </div>
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const button = document.getElementById('emailReveal');
-        if (!button) return;
+.site-nav a:hover {
+  color: var(--accent-strong);
+}
 
-        const email = ['pat', 'zh', 'isugan', '@gmail.com'].join('');
-        button.addEventListener('click', () => {
-          window.location.href = 'mailto:' + email;
-        });
-      });
-    </script>
-  </body>
-</html>
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 28px;
+  padding: 44px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 249, 244, 0.92));
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 3vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+}
+
+h3 {
+  font-size: 1.12rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 650px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin: 24px 0 20px;
+  flex-wrap: wrap;
+}
+
+.hero-details {
+  display: grid;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 10px 20px rgba(164, 96, 63, 0.2);
+}
+
+.button.secondary {
+  background: var(--surface-strong);
+  color: var(--accent-strong);
+  border: 1px solid rgba(164, 96, 63, 0.15);
+}
+
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  align-self: center;
+}
+
+.hero-card {
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--surface-strong), rgba(255, 249, 244, 0.84));
+  border: 1px solid var(--line);
+  align-self: center;
+  width: 100%;
+}
+
+.card-label {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: var(--accent-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+}
+
+.hero-card ul {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.hero-card li + li {
+  margin-top: 6px;
+}
+
+.section {
+  padding: 52px 0 0;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 22px;
+  color: var(--muted);
+  align-items: center;
+}
+
+.about-card {
+  padding: 24px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(250, 241, 233, 0.84));
+  box-shadow: 0 14px 30px rgba(67, 45, 32, 0.06);
+}
+
+.about-card.secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(255, 249, 244, 0.96), rgba(255, 255, 255, 0.92));
+}
+
+.detail-block {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(164, 96, 63, 0.06);
+  border: 1px solid rgba(164, 96, 63, 0.12);
+}
+
+.detail-block h3 {
+  margin-bottom: 6px;
+  color: var(--accent-strong);
+}
+
+.detail-block p,
+.about-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.visual-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.info-card,
+.work-group,
+.contact-card {
+  padding: 24px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(67, 45, 32, 0.06);
+}
+
+.info-card p,
+.work-group p,
+.contact-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.work-group + .work-group {
+  margin-top: 18px;
+}
+
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.work-links a {
+  color: var(--accent-strong);
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(164, 96, 63, 0.08);
+  font-weight: 600;
+}
+
+.work-links a:hover {
+  background: rgba(164, 96, 63, 0.13);
+}
+
+.contact-section {
+  padding-bottom: 20px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-copy {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-right: 8px;
+}
+
+.contact-copy p {
+  margin: 0;
+}
+
+.contact-image {
+  width: min(100%, 280px);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(67, 45, 32, 0.08);
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .about-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 28px;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-visual img {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-shell {
+    padding: 16px 16px 48px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
